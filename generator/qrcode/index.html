@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>QR & Barcode Generator - RandomLab</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/JsBarcode/3.11.5/JsBarcode.all.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                🔮 RandomLab
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../index.html#popular">Generators</a></li>
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="../../index.html">Github</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main class="page">
+
+        <div class="floating-badge float-1">
+            <i class="fa-solid fa-qrcode"></i>
+            QR Code
+        </div>
+
+        <div class="floating-badge float-2">
+            <i class="fa-solid fa-barcode"></i>
+            Barcode
+        </div>
+
+
+        <div class="container">
+
+            <a href="../../index.html" class="mini-back">
+           
+            </a>
+
+            <h1>
+                <span class="icon-title">
+                    <i class="fa-solid fa-qrcode"></i>
+                </span>
+                QR & Barcode Generator
+            </h1>
+
+
+            <!-- MODE TABS -->
+
+            <div class="mode-tabs">
+
+                <button class="tab-btn active" data-mode="qr">
+                    QR Code
+                </button>
+
+                <button class="tab-btn" data-mode="barcode">
+                    Barcode
+                </button>
+
+            </div>
+
+
+            <!-- INPUT -->
+
+            <label for="textInput" id="inputLabel">
+                Text or Link
+            </label>
+
+            <input
+                type="text"
+                id="textInput"
+                placeholder="https://example.com"
+            >
+
+
+            <!-- OUTPUT -->
+
+            <div class="output-preview">
+
+                <div id="qrOutput" class="qr-wrapper"></div>
+
+                <svg id="barcodeOutput" class="barcode-wrapper"></svg>
+
+            </div>
+
+
+
+            <!-- GENERATE -->
+
+            <button id="generateBtn" class="generate-btn">
+                Generate
+            </button>
+
+
+            <!-- DOWNLOAD -->
+
+            <button id="downloadBtn" class="secondary-btn">
+                Download PNG
+            </button>
+
+
+            <!-- BACK BUTTON -->
+
+            <a href="../../index.html" class="back-btn">
+                ← Back to RandomLab
+            </a>
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-top">
+
+            <div class="logo">
+                🔮 RandomLab
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact Support</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 RandomLab Tools. All generators run locally inside your browser for maximum security.</span>
+            <span>Created with precision for modern creators.</span>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

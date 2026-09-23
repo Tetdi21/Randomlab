@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Color Generator - RandomLab</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                🔮 RandomLab
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../index.html#popular">Generators</a></li>
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="https://github.com/Tetdi21">Github</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main class="page">
+
+        <div class="floating-badge float-1">
+            <i class="fa-solid fa-palette"></i>
+            #2563EB
+        </div>
+
+        <div class="floating-badge float-2">
+            <i class="fa-solid fa-droplet"></i>
+            hsl(237, 24%, 55%)
+        </div>
+
+
+        <div class="container">
+
+            <a href="../../index.html" class="mini-back">
+            
+            </a>
+
+            <h1>
+                <span class="icon-title">
+                    <i class="fa-solid fa-palette"></i>
+                </span>
+                Color Generator
+            </h1>
+
+
+            <!-- COLOR PREVIEW -->
+
+            <div id="colorPreview" class="color-preview"></div>
+
+
+            <!-- HEX -->
+
+            <div class="format-row">
+
+                <div class="format-label">HEX</div>
+
+                <input type="text" id="hexValue" readonly>
+
+                <button class="copy-btn" data-target="hexValue">
+                    Copy
+                </button>
+
+            </div>
+
+
+            <!-- RGB -->
+
+            <div class="format-row">
+
+                <div class="format-label">RGB</div>
+
+                <input type="text" id="rgbValue" readonly>
+
+                <button class="copy-btn" data-target="rgbValue">
+                    Copy
+                </button>
+
+            </div>
+
+
+            <!-- HSL -->
+
+            <div class="format-row">
+
+                <div class="format-label">HSL</div>
+
+                <input type="text" id="hslValue" readonly>
+
+                <button class="copy-btn" data-target="hslValue">
+                    Copy
+                </button>
+
+            </div>
+
+
+            <!-- GENERATE -->
+
+            <button id="generateBtn" class="generate-btn">
+                Generate Color
+            </button>
+
+
+            <!-- BACK BUTTON -->
+
+            <a href="../../index.html" class="back-btn">
+                ← Back to RandomLab
+            </a>
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-top">
+
+            <div class="logo">
+                🔮 RandomLab
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact Support</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 RandomLab Tools. All generators run locally inside your browser for maximum security.</span>
+            <span>Created with precision for modern creators.</span>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

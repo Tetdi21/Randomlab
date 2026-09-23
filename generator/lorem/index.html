@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Lorem Ipsum Generator - RandomLab</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                🔮 RandomLab
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../index.html#popular">Generators</a></li>
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="https://github.com/Tetdi21">Github</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main class="page">
+
+        <div class="floating-badge float-1">
+            <i class="fa-solid fa-file-lines"></i>
+            3 Paragraphs
+        </div>
+
+        <div class="floating-badge float-2">
+            <i class="fa-solid fa-align-left"></i>
+            Lorem ipsum...
+        </div>
+
+
+        <div class="container">
+
+            <a href="../../index.html" class="mini-back">
+            
+            </a>
+
+            <h1>
+                <span class="icon-title">
+                    <i class="fa-solid fa-file-lines"></i>
+                </span>
+                Lorem Ipsum Generator
+            </h1>
+
+
+            <!-- OUTPUT -->
+
+            <div class="output">
+
+                <textarea
+                    id="loremOutput"
+                    readonly
+                    rows="8"
+                ></textarea>
+
+            </div>
+
+
+            <button id="copyBtn" class="secondary-btn">
+                Copy
+            </button>
+
+
+            <!-- MODE -->
+
+            <label for="modeSelect">
+                Generate By
+            </label>
+
+            <select id="modeSelect">
+
+                <option value="paragraphs">Paragraphs</option>
+                <option value="sentences">Sentences</option>
+                <option value="words">Words</option>
+
+            </select>
+
+
+            <!-- COUNT -->
+
+            <div class="length-row">
+                <label for="countRange">Amount</label>
+                <span id="countValue" class="length-value">3</span>
+            </div>
+
+
+            <input
+                type="range"
+                id="countRange"
+                min="1"
+                max="20"
+                value="3"
+            >
+
+
+
+            <!-- GENERATE -->
+
+            <button id="generateBtn" class="generate-btn">
+                Generate Lorem Ipsum
+            </button>
+
+
+            <!-- BACK BUTTON -->
+
+            <a href="../../index.html" class="back-btn">
+                ← Back to RandomLab
+            </a>
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-top">
+
+            <div class="logo">
+                🔮 RandomLab
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact Support</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 RandomLab Tools. All generators run locally inside your browser for maximum security.</span>
+            <span>Created with precision for modern creators.</span>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

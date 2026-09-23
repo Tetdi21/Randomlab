@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dice Roller - RandomLab</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                🔮 RandomLab
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../index.html#popular">Generators</a></li>
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="https://github.com/Tetdi21">Github</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main class="page">
+
+        <div class="floating-badge float-1">
+            <i class="fa-solid fa-dice-six"></i>
+            Roll: 4 + 2
+        </div>
+
+        <div class="floating-badge float-2">
+            <i class="fa-solid fa-dice"></i>
+            Total: 17
+        </div>
+
+
+        <div class="container">
+
+            <a href="../../index.html" class="mini-back">
+             
+            </a>
+
+            <h1>
+                <span class="icon-title">
+                    <i class="fa-solid fa-dice"></i>
+                </span>
+                Dice Roller
+            </h1>
+
+
+            <!-- DICE DISPLAY -->
+
+            <div id="diceDisplay" class="dice-display">
+
+                <span class="die">⚀</span>
+
+            </div>
+
+
+            <!-- TOTAL -->
+
+            <p class="total">
+                Total: <span id="totalValue">1</span>
+            </p>
+
+
+            <!-- DICE COUNT -->
+
+            <div class="length-row">
+                <label for="diceCount">Number of Dice</label>
+                <span id="diceCountValue" class="length-value">1</span>
+            </div>
+
+
+            <input
+                type="range"
+                id="diceCount"
+                min="1"
+                max="6"
+                value="1"
+            >
+
+
+
+            <!-- ROLL -->
+
+            <button id="rollBtn" class="generate-btn">
+                Roll Dice
+            </button>
+
+
+            <!-- BACK BUTTON -->
+
+            <a href="../../index.html" class="back-btn">
+                ← Back to RandomLab
+            </a>
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-top">
+
+            <div class="logo">
+                🔮 RandomLab
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact Support</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 RandomLab Tools. All generators run locally inside your browser for maximum security.</span>
+            <span>Created with precision for modern creators.</span>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Password Generator - RandomLab</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                🔮 RandomLab
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../index.html#popular">Generators</a></li>
+                <li><a href="../../index.html">About</a></li>
+                <li><a href="https://github.com/Tetdi21">Github</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main class="page">
+
+        <div class="floating-badge float-1">
+            <i class="fa-solid fa-lock"></i>
+            ••••••••
+        </div>
+
+        <div class="floating-badge float-2">
+            <i class="fa-solid fa-lock"></i>
+            df83-9b88-12ac
+        </div>
+
+
+        <div class="container">
+
+            <a href="../../index.html" class="mini-back">
+                ← Back to RandomLab
+            </a>
+
+            <h1>
+                <span class="icon-title">
+                    <i class="fa-solid fa-key"></i>
+                </span>
+                Password Generator
+            </h1>
+
+
+            <!-- PASSWORD OUTPUT -->
+
+            <div class="output">
+
+                <input
+                    type="text"
+                    id="password"
+                    readonly
+                >
+
+                <button id="copyBtn">
+                    Copy
+                </button>
+
+            </div>
+
+
+            <!-- STRENGTH METER -->
+
+            <div class="strength-meter">
+                <div class="strength-bar">
+                    <div id="strengthFill" class="strength-fill"></div>
+                </div>
+                <span id="strengthLabel" class="strength-label">—</span>
+            </div>
+
+
+            <!-- LENGTH -->
+
+            <div class="length-row">
+                <label for="length">Password Length</label>
+                <span id="lengthValue" class="length-value">16</span>
+            </div>
+
+
+            <input
+                type="range"
+                id="length"
+                min="8"
+                max="64"
+                value="16"
+            >
+
+
+
+            <!-- OPTIONS -->
+
+            <div class="options">
+
+                <label>
+                    <input type="checkbox" id="uppercase" checked>
+                    Uppercase
+                </label>
+
+                <label>
+                    <input type="checkbox" id="lowercase" checked>
+                    Lowercase
+                </label>
+
+                <label>
+                    <input type="checkbox" id="numbers" checked>
+                    Numbers
+                </label>
+
+                <label>
+                    <input type="checkbox" id="symbols">
+                    Symbols
+                </label>
+
+            </div>
+
+
+
+            <!-- GENERATE -->
+
+            <button id="generateBtn" class="generate-btn">
+                Generate Password
+            </button>
+
+
+            <!-- BACK BUTTON -->
+
+            <a href="../../index.html" class="back-btn">
+                ← Back to RandomLab
+            </a>
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-top">
+
+            <div class="logo">
+                🔮 RandomLab
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact Support</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 RandomLab Tools. All generators run locally inside your browser for maximum security.</span>
+            <span>Created with precision for modern creators.</span>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
