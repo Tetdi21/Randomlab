@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🔮 RandomLab
 
 **One Website. Countless Generators.**
@@ -44,3 +45,7 @@ MIT License — bebas dipakai dan dimodifikasi.
 ---
 
 Made with ❤️ by [Tedi Aditya Rahmadi](https://github.com/Tetdi21)
+=======
+# Randomlab
+a website that had tools for random generators
+>>>>>>> 164faece86d89c71804322c95ad9081cc1c0a57e
