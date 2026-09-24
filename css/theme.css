@@ -1,0 +1,140 @@
+/* ================= THEME VARIABLES ================= */
+
+:root{
+
+    /* ---- LIGHT THEME (default) ---- */
+
+    --bg-page:#F8FAFC;
+    --bg-surface:#FFFFFF;
+    --bg-surface-alt:#F8FAFC;
+    --bg-input:#F8FAFC;
+
+    --border-color:#E2E8F0;
+    --border-color-strong:#CBD5E1;
+
+    --text-primary:#0F172A;
+    --text-secondary:#334155;
+    --text-muted:#64748B;
+    --text-faint:#94A3B8;
+
+    --accent:#2563EB;
+    --accent-hover:#1D4ED8;
+    --accent-soft:#EFF6FF;
+    --accent-soft-text:#2563EB;
+
+    --badge-popular-bg:#DBEAFE;
+    --badge-popular-text:#1D4ED8;
+    --badge-hot-bg:#FFEDD5;
+    --badge-hot-text:#C2410C;
+    --badge-dev-bg:#EDE9FE;
+    --badge-dev-text:#6D28D9;
+
+    --shadow-color:rgba(15,23,42,.08);
+    --shadow-color-soft:rgba(15,23,42,.06);
+    --shadow-color-hover:rgba(37,99,235,.12);
+
+    --success:#22C55E;
+    --success-bg:#DCFCE7;
+    --success-text:#15803D;
+    --danger:#EF4444;
+    --danger-bg:#FEE2E2;
+    --danger-text:#EF4444;
+    --warning:#F59E0B;
+    --warning-bg:#FFEDD5;
+    --warning-text:#C2410C;
+
+}
+
+
+/* ---- DARK THEME ---- */
+
+html[data-theme="dark"]{
+
+    --bg-page:#0F172A;
+    --bg-surface:#1E293B;
+    --bg-surface-alt:#0F172A;
+    --bg-input:#0F172A;
+
+    --border-color:#334155;
+    --border-color-strong:#475569;
+
+    --text-primary:#F8FAFC;
+    --text-secondary:#E2E8F0;
+    --text-muted:#94A3B8;
+    --text-faint:#64748B;
+
+    --accent:#37B6FF;
+    --accent-hover:#229fe8;
+    --accent-soft:#1E3A5F;
+    --accent-soft-text:#7DD3FC;
+
+    --badge-popular-bg:#1E3A8A;
+    --badge-popular-text:#93C5FD;
+    --badge-hot-bg:#7C2D12;
+    --badge-hot-text:#FDBA74;
+    --badge-dev-bg:#4C1D95;
+    --badge-dev-text:#C4B5FD;
+
+    --shadow-color:rgba(0,0,0,.4);
+    --shadow-color-soft:rgba(0,0,0,.3);
+    --shadow-color-hover:rgba(55,182,255,.25);
+
+    --success:#4ADE80;
+    --success-bg:#14532D;
+    --success-text:#86EFAC;
+    --danger:#F87171;
+    --danger-bg:#450A0A;
+    --danger-text:#FCA5A5;
+    --warning:#FBBF24;
+    --warning-bg:#451A03;
+    --warning-text:#FDBA74;
+
+}
+
+
+/* ---- SMOOTH TRANSITION SAAT GANTI TEMA ---- */
+
+body, .navbar, footer, .card, .container, .output input, .output textarea, select, .format-row input, .uuid-row input{
+
+    transition:background-color .25s ease, color .25s ease, border-color .25s ease;
+
+}
+
+
+/* ================= THEME TOGGLE BUTTON ================= */
+
+.theme-toggle{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:10px;
+
+    border:1px solid var(--border-color);
+
+    background:var(--bg-surface);
+
+    color:var(--text-secondary);
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    transition:.2s;
+
+}
+
+.theme-toggle:hover{
+
+    border-color:var(--accent);
+
+    color:var(--accent);
+
+}
