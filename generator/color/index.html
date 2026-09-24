@@ -12,6 +12,16 @@
 
     <title>Color Generator - RandomLab</title>
 
+    <!-- Apply saved theme SEDINI mungkin, sebelum CSS dimuat -->
+    <script>
+        (function(){
+            if(localStorage.getItem("randomlab-theme") === "dark"){
+                document.documentElement.setAttribute("data-theme", "dark");
+            }
+        })();
+    </script>
+
+    <link rel="stylesheet" href="../../css/theme.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -29,12 +39,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                 🔮 RandomLab
             </div>
 
-            <ul class="nav-links">
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../index.html#popular">Generators</a></li>
-                <li><a href="../../index.html">About</a></li>
-                <li><a href="https://github.com/Tetdi21">Github</a></li>
-            </ul>
+            <div class="nav-right">
+
+                <ul class="nav-links">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../index.html#popular">Generators</a></li>
+                    <li><a href="../../index.html">About</a></li>
+                    <li><a href="https://github.com/Tetdi21/">Github</a></li>
+                </ul>
+
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode"></button>
+
+            </div>
 
         </nav>
 
@@ -57,7 +73,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         <div class="container">
 
             <a href="../../index.html" class="mini-back">
-            
+               
             </a>
 
             <h1>
@@ -161,6 +177,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     </footer>
 
 
+    <script src="../../js/theme-toggle.js"></script>
     <script src="script.js"></script>
 
 </body>
